@@ -30,7 +30,7 @@ export default class Signup extends Component {
     render() {
     return(
         <div>
-            <h1> Sign Up </h1>
+            <h1 style={{color: '#174793'}}> Sign Up </h1>
             <Form onSubmit={(e) => this.handleSubmit(e)}>
                 <FormGroup>
                     <Label htmlFor="username">Username</Label>
@@ -40,7 +40,7 @@ export default class Signup extends Component {
                     <Label htmlFor="password">Password</Label>
                     <Input onChange={(e) => this.setState({password: e.target.value})} name="password" value={this.state.password}/>
                 </FormGroup>
-                <Button type="submit" block>Sign Up</Button>
+                <Button style={{backgroundColor: '#174793'}} type="submit" block>Sign Up</Button>
             </Form>
         </div>
     )
